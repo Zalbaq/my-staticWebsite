@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body::-webkit-scrollbar{
     display: none;
@@ -41,7 +42,9 @@ nav > .nav-menu ul{
     display: flex;
     font-weight: 600;
 }
-nav > .nav-menu ul li{
+nav > .nav-menu ul li a{
+    text-decoration: none;
+        color: #D5FFD0;
     margin-left: 4rem;
     cursor: pointer;
     letter-spacing: 2px;
@@ -50,6 +53,7 @@ nav > .nav-menu ul li{
 nav > .nav-menu ul li:hover{
     text-shadow: 0 0 10px #F806CC;
 }
+
 #home{
     height: 100%;
     width: 100%;
@@ -72,7 +76,7 @@ nav > .nav-menu ul li:hover{
     height: 8rem;
     width: 6rem;
     position: absolute;
-    background: rgba( 255, 255, 255, 0.1 );
+    background: #F806CC;
     box-shadow: 0 0px 32px 0 #F806CC;
     backdrop-filter: blur( 0.5px );
     -webkit-backdrop-filter: blur( 0.5px );
@@ -87,7 +91,7 @@ nav > .nav-menu ul li:hover{
     height: 8rem;
     width: 6rem;
     position: absolute;
-    background: rgba( 255, 255, 255, 0.1 );
+    background: #F806CC;
     box-shadow: 0 0px 32px 0 #F806CC;
     backdrop-filter: blur( 0.5px );
     -webkit-backdrop-filter: blur( 0.5px );
@@ -180,7 +184,7 @@ nav > .nav-menu ul li:hover{
     flex-wrap: wrap;
     width: 100%;
     padding: 1rem 0;
-    gap: 2rem;
+    gap: 2.5rem;
 
 }
 .section2 .box{
@@ -207,6 +211,7 @@ nav > .nav-menu ul li:hover{
     fill: rgba( 255, 255, 255, 0.18 );
 }
 .section2 .box:hover{
+    scale: 1.05;
     transform: translateY(-20px);
     box-shadow: 0 8px 32px 0 rgba(248, 6, 204, .37);
     background: rgba( 255, 255, 255, 0.1 );
@@ -321,6 +326,7 @@ nav > .nav-menu ul li:hover{
     fill: rgba( 255, 255, 255, 0.18 );    
 }
 .section3 .box:hover{
+    scale: 1.05;
     transform: translateY(-20px);
     box-shadow: 0 8px 32px 0 rgba(248, 6, 204, .37);
     background: rgba( 255, 255, 255, 0.1 );
